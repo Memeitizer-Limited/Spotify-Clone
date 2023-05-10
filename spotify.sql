@@ -41,13 +41,13 @@ CREATE TABLE `albums` (
 --
 
 INSERT INTO `albums` (`id`, `title`, `artist`, `genre`, `artworkPath`) VALUES
-(1, 'Bacon and Eggs', 2, 4, 'assets/images/artwork/clearday.jpg'),
-(2, 'Pizza Head', 5, 9, 'assets/images/artwork/energy.jpg'),
-(3, 'Summer Hits', 3, 1, 'assets/images/artwork/goinghigher.jpg'),
-(4, 'The Movie Soundtrack', 2, 9, 'assets/images/artwork/funkyelement.jpg'),
-(5, 'Best of the Worst', 1, 3, 'assets/images/artwork/popdance.jpg'),
-(6, 'Hello World', 3, 6, 'assets/images/artwork/ukulele.jpg'),
-(7, 'Best Beats', 4, 7, 'assets/images/artwork/sweet.jpg');
+(1, 'Its an album', 2, 4, 'assets/images/artwork/clearday.jpg'),
+(2, 'this code for these', 5, 9, 'assets/images/artwork/energy.jpg'),
+(3, 'albums is', 3, 1, 'assets/images/artwork/goinghigher.jpg'),
+(4, 'on line 609001', 2, 9, 'assets/images/artwork/funkyelement.jpg'),
+(5, 'of my code for this', 1, 3, 'assets/images/artwork/popdance.jpg'),
+(6, 'website', 3, 6, 'assets/images/artwork/ukulele.jpg'),
+(7, 'ffs', 4, 7, 'assets/images/artwork/sweet.jpg');
 
 -- --------------------------------------------------------
 
@@ -65,11 +65,11 @@ CREATE TABLE `artists` (
 --
 
 INSERT INTO `artists` (`id`, `name`) VALUES
-(1, 'Mickey Mouse'),
-(2, 'Goofy'),
-(3, 'Eric Stanley'),
-(4, 'Homer'),
-(5, 'Bruce Lee');
+(1, 'Hardstyle'),
+(2, 'Placeholder'),
+(3, 'Memeitizer'),
+(4, 'This is too much code'),
+(5, 'I hate this code so much');
 
 -- --------------------------------------------------------
 
@@ -116,12 +116,12 @@ CREATE TABLE `playlists` (
 --
 
 INSERT INTO `playlists` (`id`, `name`, `owner`, `dateCreated`) VALUES
-(2, 'Melodies', 'ericstanley', '2019-10-14 00:00:00'),
-(3, 'Rock', 'ericstanley', '2019-10-14 00:00:00'),
-(4, 'Beats', 'ericstanley', '2019-10-18 00:00:00'),
-(5, 'Jazz', 'ericstanley', '2019-10-18 00:00:00'),
-(6, 'Pop', 'ericstanley', '2019-10-18 00:00:00'),
-(7, 'Hits', 'ericstanley', '2019-10-18 00:00:00');
+(2, 'Melodies', 'memeitizer', '2019-10-14 00:00:00'),
+(3, 'Rock', 'memeitizer', '2019-10-14 00:00:00'),
+(4, 'Beats', 'memeitizer', '2019-10-18 00:00:00'),
+(5, 'Jazz', 'memeitizer', '2019-10-18 00:00:00'),
+(6, 'Pop', 'memeitizer', '2019-10-18 00:00:00'),
+(7, 'Hits', 'memeitizer', '2019-10-18 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -200,7 +200,7 @@ INSERT INTO `songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `pat
 (22, 'Retro Soul', 4, 7, 5, '3:36', 'assets/music/bensound-retrosoul.mp3', 1, 22),
 (23, 'Sad Day', 5, 2, 1, '2:28', 'assets/music/bensound-sadday.mp3', 1, 56),
 (24, 'Sci-fi', 5, 2, 2, '4:44', 'assets/music/bensound-scifi.mp3', 2, 24),
-(25, 'Slow Motion', 5, 2, 3, '3:26', 'assets/music/bensound-slowmotion.mp3', 3, 22);
+(25, 'Hard Throat', 5, 2, 3, '3:26', 'assets/music/hardthroat.mp3', 3, 22);
 
 -- --------------------------------------------------------
 
@@ -224,9 +224,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `firstname`, `lastname`, `email`, `password`, `signup_date`, `profile_pic`) VALUES
-(6, 'EricStanley', 'Eric', 'Stanley', 'Eric@gmail.com', '72a3dcef165d9122a45decf13ae20631', '2019-08-31 00:00:00', 'assets/images/profile-pics/user.png'),
-(7, 'KennedyJoseph', 'Kennedy', 'Joseph', 'Kennedy@gmail.com', 'f5d1278e8109edd94e1e4197e04873b9', '2019-08-31 00:00:00', 'assets/images/profile-pics/user.png'),
-(8, 'ArunRaja', 'Arun', 'Raja', 'Arun@gmail.com', '21232f297a57a5a743894a0e4a801fc3', '2019-08-31 00:00:00', 'assets/images/profile-pics/user.png');
+(6, 'Memeitizer', 'Hayden', 'Drysdale', 'Memeitizer@memeitizer-social.com', '72a3dcef165d9122a45decf13ae20631', '2019-08-31 00:00:00', 'assets/images/profile-pics/user.png'),
+(7, 'i dont fucking know', 'ffs', 'im done', 'example@gmail.com', 'f5d1278e8109edd94e1e4197e04873b9', '2019-08-31 00:00:00', 'assets/images/profile-pics/user.png'),
+(8, 'this code is killing me', 'help', 'me', 'test@gmail.com', '21232f297a57a5a743894a0e4a801fc3', '2019-08-31 00:00:00', 'assets/images/profile-pics/user.png');
 
 --
 -- Indexes for dumped tables
